@@ -149,7 +149,9 @@ class MovieShotsAdmin(admin.ModelAdmin):
     get_image.short_description = "Изображение"
 
 
-admin.site.register(RatingStar)
+@admin.register(RatingStar)
+class RatingStarAdmin(admin.ModelAdmin):
+    list_display = ('id', 'value')
 
 admin.site.site_title = "Django Movies"
 admin.site.site_header = "Django Movies"
