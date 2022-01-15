@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'django_filters',
+    'drf_yasg',
     'djoser',
 
     # project apps
