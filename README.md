@@ -7,3 +7,9 @@ Run
 ````
 $ docker-compose up -d --build
 ````
+
+## How to create superuser
+
+````
+$ docker exec -it container_id python ./manage.py createsuperuser
+````
